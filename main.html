@@ -1,51 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Job Application Form</title>
+  <meta charset="UTF-8">
+  <title>Job Application Form</title>
 </head>
 <body>
-    <form action="#" method="post">
-        <div>
-            <label for="name">Name *:</label>
-            <input type="text" id="name" name="name" required>
-        </div>
+  <form action="#" method="post">
+    <div>
+      <label for="name">Name *:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
 
-        <div>
-            <label for="email">Email *:</label>
-            <input type="email" id="email" name="email" required>
-        </div>
+    <div>
+      <label for="dob">Date of Birth *:</label>
+      <input type="date" id="dob" name="dob" required>
+    </div>
 
-        <div>
-            <span>Gender *:</span><br>
-            <input type="radio" id="gender-male" name="gender" value="male" required>
-            <label for="gender-male">Male</label>
+    <div>
+      <label for="email">Email *:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
 
-            <input type="radio" id="gender-female" name="gender" value="female">
-            <label for="gender-female">Female</label>
-        </div>
+    <div>
+      <label for="age">Age *:</label>
+      <input type="number" id="age" name="age" required>
+    </div>
 
-        <div>
-            <label for="laptop">Laptop Brands:</label>
-            <select id="laptop" name="laptop">
-                <option value="">-- Select a brand --</option>
-                <option value="apple">Apple</option>
-                <option value="asus">Asus</option>
-                <option value="hp">HP</option>
-            </select>
-        </div>
+    <div>
+      <label for="password">Password *:</label>
+      <input type="password" id="password" name="password" required>
+    </div>
 
-        <div>
-            <label for="age">Age *:</label>
-            <input type="number" id="age" name="age" required>
-        </div>
+    <div>
+      <label for="laptop">Laptop Brands:</label>
+      <select id="laptop" name="laptop">
+        <option value="">-- Select a brand --</option>
+        <option value="apple">Apple</option>
+        <option value="asus">Asus</option>
+        <option value="hp">HP</option>
+      </select>
+    </div>
 
-        <div>
-            <label for="dob">Date of Birth *:</label>
-            <input type="date" id="dob" name="dob" required>
-        </div>
+    <div>
+      <span>Gender *:</span><br>
+      <input type="radio" id="gender-male" name="gender" value="male" required>
+      <label for="gender-male">Male</label>
 
-        <div>
-            <label for="password">Password *:</label>
-            <input type="password" id="password" name="password" required>
-        </div>
+      <input type="radio" id="gender-female" name="gender" value="female">
+      <label for="gender-female">Female</label>
+    </div>
+
+    <div>
+      <label for="portfolio">Portfolio URL:</label>
+      <input type="url" id="portfolio" name="portfolio">
+    </div>
+
+    <div>
+      <button type="submit">Submit Application</button>
+    </div>
+  </form>
+</body>
+</html>
